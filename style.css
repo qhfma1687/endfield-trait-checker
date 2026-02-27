@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.layout {
+  display: flex;
+  gap: 30px;
+}
+
+.panel {
+  width: 50%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+.weapon-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: darkred;
+}
