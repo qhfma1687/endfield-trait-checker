@@ -11,4 +11,5 @@ async function init() {
   document.getElementById("search").oninput = renderWeapons;
 }
 
+
 init();
