@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>엔드필드 기질 파밍 체크</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>엔드필드 기질 파밍 도우미</h1>
+
+  <div class="layout">
+
+    <!-- 무기 체크 -->
+    <div class="panel">
+      <h2>파밍 목표 무기</h2>
+      <input type="text" id="search" placeholder="무기 검색..." />
+      <div id="weapon-list"></div>
+    </div>
+
+    <!-- 응집점 & 최적화 -->
+    <div class="panel">
+      <h2>응집점 분석</h2>
+      <select id="node-select"></select>
+
+      <div class="result">
+        <h3>최적 각인권 옵션</h3>
+        <div id="best-option"></div>
+      </div>
+
+      <div class="result">
+        <h3>1순위 포함 최적화</h3>
+        <select id="priority-weapon"></select>
+        <div id="priority-result"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/state.js"></script>
+  <script src="js/optimizer.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
