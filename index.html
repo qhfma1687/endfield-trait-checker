@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>엔드필드 기질 파밍 체크</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,16 +22,21 @@
     <!-- 응집점 & 최적화 -->
     <div class="panel">
       <h2>응집점 분석</h2>
+
+      <label>응집점 선택</label>
       <select id="node-select"></select>
 
       <div class="result">
         <h3>최적 각인권 옵션</h3>
-        <div id="best-option"></div>
+        <div id="best-option">무기를 선택하세요.</div>
       </div>
 
       <div class="result">
         <h3>1순위 포함 최적화</h3>
+
+        <label>1순위 무기 선택</label>
         <select id="priority-weapon"></select>
+
         <div id="priority-result"></div>
       </div>
 
@@ -38,9 +44,8 @@
 
   </div>
 
-  <script src="js/state.js"></script>
-  <script src="js/optimizer.js"></script>
-  <script src="js/ui.js"></script>
+  <!-- JS는 main.js 하나만 -->
   <script src="js/main.js"></script>
+
 </body>
 </html>
